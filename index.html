@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #container {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    #left-column {
+        width: 100%; 
+    }
+
+    #right-column {
+        width: 100%; 
+        text-align: center; 
+        margin-top: 20px; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    #contact-form {
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    /* Media Queries */
+    @media only screen and (min-width: 600px) {
+        #left-column {
+            width: 30%;
+        }
+
+        #right-column {
+            width: 70%;
+            text-align: right;
+            margin-top: 0;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+    <h1>My Profile</h1>
+
+    <div id="container">
+        <div id="left-column">
+            <h2>HARIPREETH THOTA</h2>
+            <p>Phone: 6309351001</p>
+            <p>Email: <a href="haripreeththota@gmail.com">haripreeththota@gmail.com</a></p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/haripreeth-thota">www.linkedin.com/in/haripreeth-thota</a></p>
+            <p>Github: <a href="https://github.com/haripreeth369">https://github.com/haripreeth369</a></p>
+            <p>Designation:Full Stack Java Developer</p>
+            <p>Address: Flat No:203, Thatikonda Towers, Mustafa Nagar, Khammam, Telangana, 507001</p>
+        </div>
+
+        <div id="right-column">
+            <img src="./resourses/PhotoSelf.jpg" alt="Your Photo">
+        </div>
+    </div>
+
+    <div>
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Pass Percentage</th>
+            </tr>
+            <tr>
+                <td>B.E/B.Tech</td>
+                <td><a href="https://kanchiuniv.ac.in/">Sri Chandrasekarendra Saraswathi Viswa Maha Vidyalaya</td>
+                <td>2023</td>
+                <td>90.8%</td>
+            </tr>
+            <tr>
+                <td>Senior Secoundary(XII)</td>
+                <td><a href="https://www.narayanagroup.com/">Narayana Collage</td>
+                <td>2019</td>
+                <td>94.6%</td>
+            </tr>
+            <tr>
+                <td>Secoundary(X)</td>
+                <td><a href="https://trivenitalentschools.com/">Triveni Talent School</td>
+                <td>2017</td>
+                <td>95%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <textarea id="subject" name="subject" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
